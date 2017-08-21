@@ -1,0 +1,9 @@
+<script src="bundle.js"></script>
+
+<script>
+hydraFetch('http://localhost:8080/api', {"headers": {"Accept": "text/turtle"}} ).then((test, test2) => {
+  console.log(test, test2)
+}).catch((err) => {
+  console.error(err.stack || err.message)
+})
+</script>
